@@ -22,7 +22,6 @@ async function getWeather() {
       weatherData.main.humidity,
       weatherData.wind.speed,
     ];
-    console.log(weatherData);
     updateCard();
   }
 }
@@ -31,6 +30,6 @@ function updateCard() {
   weatherCard[0].innerHTML = temp[0]
   weatherCard[1].innerHTML = temp[1]
   weatherCard[2].innerHTML = `${temp[2]}°C`
-  weatherCard[3].innerHTML = `Humidity: ${temp[5]}%`
-  weatherCard[4].innerHTML = `Wind: ${temp[6]} km/h`
+  weatherCard[3].innerHTML = `Humidity: ${temp[3]}%`
+  weatherCard[4].innerHTML = `Wind: ${temp[4]} km/h`
 }
