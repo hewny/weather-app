@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    background-image: url("https://www.wallpapertip.com/wmimgs/0-5568_hd-mac.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    height: 8vh;
+    min-height: 100px;
+    padding: 8px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.header input, button {
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    font-size: 1rem;
+}
+
+.header input {
+    min-width: 250px;
+}
+
+.header button {
+    min-width: 100px;
+}
+
+.main {
+    height: 90vh;
+    font-size: 32px;
+    color: white;
+}
+
+.main .weather {
+    margin: 10vh auto;
+    padding: 15px; 
+    width: 40vw;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main .weather ul {
+    list-style: none;
+}
+
+.main .weather ul li:first-child{
+    font-size: 42px;
+}
+
+.footer {
+    height: 2vh;
+    min-height: 26px;
+    line-height: 2vh;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.footer a:link, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+}
+
+.footer img {
+    height: 16px;
+    width: 16px;
+}
